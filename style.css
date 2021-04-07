@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Archivo', sans-serif;
+    background-color: #ffffff;
+    padding: 5px;
+    color: #626567;
+    letter-spacing: 1px;
+}
+
+h1{
+	font-size: 50px
+}
+
+img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px 0px 20px 0px;
+    box-shadow: 20px 20px #9dd2d0;
+    border: 5px solid white;
+}
+
+input{
+    font-family: 'Archivo', sans-serif;
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #f3f3f3;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    /*padding:20px;*/
+}
+
+#containerFood{
+    /* display: inline-grid; */
+    /* justify-content: center; */
+    /* padding: 0px; */
+    /* margin: 0 auto;*/
+}
+
+#submitBtn{
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    background-color: #9dd2d0;
+    color: #fff;
+}
+
+#dynamicMeal{
+    /* display: flex; */
+    /* justify-content: center; */
+    padding: 20px;
+    margin: 0 auto;
+	
+}
+
+#titleAndBtn{
+	padding: 20px;
+    font-size: 20px;
+}
+
+#mealCategory, #mealArea{
+	font-style:italic
+}
+
+#mealBtn{
+font-family: 'Archivo', sans-serif;  
+  font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    padding:10px;
+    background-color: #fff;
+}
+
+#mealBtn a{ 
+    color: black;
+    text-decoration: none;
+}
+
+#openRecipe{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#recipeText{
+	display: none
+}
+
+
+
+
+
