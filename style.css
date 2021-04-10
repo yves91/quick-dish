@@ -33,6 +33,7 @@ input{
     padding: 10px;
     font-size: 20px;
     background-color: #f3f3f3;
+    border: 5px solid white;
 }
 
 #container{
@@ -56,6 +57,7 @@ input{
     font-size: 20px;
     background-color: #9dd2d0;
     color: #fff;
+    border: 5px solid white;
 }
 
 #dynamicMeal{
@@ -97,8 +99,3 @@ font-family: 'Archivo', sans-serif;
 #recipeText{
 	display: none
 }
-
-
-
-
-
