@@ -4,69 +4,132 @@
 }
 
 body{
-    font-family: 'Archivo', sans-serif;
-    background-color: #ffffff;
-    padding: 5px;
-    color: #626567;
-    letter-spacing: 1px;
+    font-family: 'Karla', sans-serif;
+    background-color: #FCF6B1;
+    /* padding: 5px; */
+    color: #595A4A;
+    /* letter-spacing: 1px;*/
 }
 
 h1{
-	font-size: 50px
+    font-family: 'Corben', cursive;
+    font-size: 65px;
+    color: #F7B32B;
+    -webkit-animation-name: appTitle;
+    -webkit-animation-duration: 1.5s;
+}
+
+@-webkit-keyframes appTitle {
+    from {
+        transform: translateX(-800px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+  }
+
+@media only screen and (max-width:585px){
+   h1{
+       font-size: 40px;
+    }
+}
+
+@media only screen and (max-width:396px){
+   h1{
+       font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 361px){
+    h1 {
+        font-size: 25px;
+    }
+}
+
+h2{
+    font-family: 'Corben', cursive;
+    color: #F7B32B;
 }
 
 img{
-    width: 200px;
     height: 300px;
     object-fit: cover;
-    border-radius: 20px 0px 20px 0px;
-    box-shadow: 20px 20px #9dd2d0;
-    border: 5px solid white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 27px -27px #2d1e2f;
+    /* border: 5px solid white; */
 }
 
 input{
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Karla', sans-serif;
     width: 300px;
     height: 30px;
     border: none;
     border-radius: 10px;
     padding: 10px;
     font-size: 20px;
-    background-color: #f3f3f3;
-    border: 5px solid white;
+    /* background-color: #f3f3f3; */
+    /* border: 5px solid white; */
+    outline: none;
+}
+
+
+.inputBox {
+    background-color: #FCF6B1 !important;
+    padding-top: 55px !important;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 55px;
 }
 
 #container{
     display: flex;
     justify-content: center;
-    /*padding:20px;*/
+    background-color: #fff;
+    padding: 55px;
 }
 
 #containerFood{
-    /* display: inline-grid; */
-    /* justify-content: center; */
-    /* padding: 0px; */
-    /* margin: 0 auto;*/
+  /* justify-content: center;*/
+  text-align: center;
+  margin-top: 50px;
 }
 
 #submitBtn{
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Karla', sans-serif;
     font-weight: bold;
     border-radius: 10px;
     border: none;
     font-size: 20px;
-    background-color: #9dd2d0;
+    background-color: #2d1e2f;
     color: #fff;
-    border: 5px solid white;
+    /* border: 5px solid white; */
+    width: 100px;
+    outline: none;
+}
+
+#submitBtn:hover{
+    cursor: pointer;
 }
 
 #dynamicMeal{
-    /* display: flex; */
-    /* justify-content: center; */
-    padding: 20px;
-    margin: 0 auto;
-	
+    padding-bottom: 55px;
+    background-color: #ffffff;
+    margin-bottom: 100px;
+    padding-top: 55px;
+   /* -webkit-animation-name: appMeal;
+    -webkit-animation-duration: 2s;*/
 }
+
+/*@keyframes appMeal {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }*/
+
 
 #titleAndBtn{
 	padding: 20px;
@@ -74,12 +137,13 @@ input{
 }
 
 #mealCategory, #mealArea{
-	font-style:italic
+	/* font-style:italic */
+	font-weight: bold;
 }
 
 #mealBtn{
-font-family: 'Archivo', sans-serif;  
-  font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
     border-radius: 10px;
     border: none;
     padding:10px;
@@ -94,8 +158,36 @@ font-family: 'Archivo', sans-serif;
 #openRecipe{
     font-size: 25px;
     font-weight: bold;
+    outline: none;
+    font-family: 'Karla', sans-serif;
+    background-color: #2d1e2f;
+    width: 200px;
+    margin: 0 auto;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#openRecipe:hover{
+    cursor: pointer;
 }
 
 #recipeText{
 	display: none
+}
+
+
+details[open] summary ~ *{
+    animation:  sweep .5s ease-in-out;
+}
+
+@keyframes sweep{
+    from{
+        opacity: 0; margin-top: -10px;
+    }
+    to{
+        opacity: 1; margin-top: 0px;
+    }
 }
